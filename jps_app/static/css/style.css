@@ -1,7 +1,15 @@
 
+  @import url('https://fonts.googleapis.com/css2?family=Climate+Crisis&family=Libre+Baskerville&family=Lobster&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
 .navbar{
     background-image: url(https://images.unsplash.com/photo-1506744038136-46273834b3fb?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=1261&ixid=MnwxfDB8MXxyYW5kb218MHx8d2FsbHBhcGVyLGxhbmRzY2FwZXx8fHx8fDE2Nzg5Mzg4Nzg&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=561);
-    
+    font-family: 'Lora', serif;
 }
 .loader {
   width: 48px;
@@ -68,3 +76,150 @@
     transform: scale(1.2, 1);
   }
 }
+
+/*login button style*/
+.lgbtn {
+ text-decoration: none;
+ position: relative;
+ border: none;
+ font-size: 20px;
+ font-family: inherit;
+ color: #fff;
+ width: 4em;
+ height: 2em;
+ line-height: 2em;
+ text-align: center;
+ background: -webkit-gradient(linear,left top, right top,from(#03a9f4),color-stop(#f441a5),color-stop(#ffeb3b),to(#03a9f4));
+ background: linear-gradient(90deg,#03a9f4,#f441a5,#ffeb3b,#03a9f4);
+ background-size: 300%;
+ border-radius: 30px;
+ z-index: 1;
+}
+
+.lgbtn:hover {
+ -webkit-animation: ani 8s linear infinite;
+         animation: ani 8s linear infinite;
+ border: none;
+}
+
+@-webkit-keyframes ani {
+ 0% {
+  background-position: 0%;
+ }
+
+ 100% {
+  background-position: 400%;
+ }
+}
+
+@keyframes ani {
+ 0% {
+  background-position: 0%;
+ }
+
+ 100% {
+  background-position: 400%;
+ }
+}
+
+.lgbtn:before {
+ content: '';
+ position: absolute;
+ top: -5px;
+ left: -5px;
+ right: -5px;
+ bottom: -5px;
+ z-index: -1;
+ background: -webkit-gradient(linear,left top, right top,from(#03a9f4),color-stop(#f441a5),color-stop(#ffeb3b),to(#03a9f4));
+ background: linear-gradient(90deg,#03a9f4,#f441a5,#ffeb3b,#03a9f4);
+ background-size: 400%;
+ border-radius: 35px;
+ -webkit-transition: 1s;
+ transition: 1s;
+}
+
+.lgbtn:hover::before {
+ -webkit-filter: blur(20px);
+         filter: blur(20px);
+}
+
+.lgbtn:active {
+ background: linear-gradient(32deg,#03a9f4,#f441a5,#ffeb3b,#03a9f4);
+}
+/*end login button style*/
+
+
+/*start navbar options style*/
+.nav-link{
+  padding: 24px 36px;
+  font-size: 40px;
+/*  background-color: royalblue;*/
+  color: #fff;
+  border: none;
+  border-radius: 2px;
+  transform: rotateX(35deg)
+  box-shadow 0 8px 1px #000000;
+  transition: 0.15s;
+  transition-timing-function: ease-in-out;
+}
+
+.nav-link:hover{
+  box-shadow: 0 2px 1px #000000;
+  transform: rotateX(35deg) translateY(6px);
+}
+
+.nav-link:focus{
+  outline: none;
+}
+/*end navbar options style*/
+
+/*start footer bar styles*/
+
+
+@import url('https://fonts.googleapis.com/css?family=Rubik&display=swap');
+body {
+    background: linear-gradient(0deg, #fff, 50%, #DEEEFE);
+    font-family: 'Rubik', sans-serif;
+    background: #455A64;
+    height: 100 !important;
+}
+
+
+.con{
+    overflow:hidden; 
+/*    margin-top: 250px ;*/
+    background:#262626 ;
+    color: #627482  !important;
+    margin-bottom: 0 ;
+    padding-bottom:0  ;
+}
+
+small{
+    font-size: calc(12px + (15 - 12) * ((100vw - 360px) / (1600 - 360))) !important; 
+}
+
+.bold-text{
+    color: #989c9e !important;
+}
+
+
+.mt-55{
+    margin-top: calc(50px + (60 - 50) * ((100vw - 360px) / (1600 - 360))) !important; 
+}
+
+
+h3{
+    font-size: calc(34px + (40 - 34) * ((100vw - 360px) / (1600 - 360))) !important; 
+}
+ 
+.social{
+    font-size: 21px !important; 
+}
+
+.rights{
+    font-size: calc(10px + (12 - 10) * ((100vw - 360px) / (1600 - 360))) !important; 
+}
+
+
+
+/*end footer bar styles*/
